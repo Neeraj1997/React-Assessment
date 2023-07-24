@@ -35,8 +35,8 @@ function App() {
 
   const [count, setCount] = useState(0);
   const myButtons = [
-    { label: "Decrement", backgroundColor: "bg-red-300", action: "sub" },
-    { label: "Increment", backgroundColor: "bg-green-300", action: "add" },
+    { label: "Decrement", backgroundColor: "hover:bg-red-300", action: "sub" },
+    { label: "Increment", backgroundColor: "hover:bg-green-300", action: "add" },
   ];
   const onClickHandler = (action) => {
     action === "add" && setCount((prevState) => prevState + 1);

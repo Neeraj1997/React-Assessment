@@ -7,7 +7,7 @@ function ButtonComponent({ myButtons, onClickHandler }) {
         <>
           <button
             onClick={() => onClickHandler(button.action)}
-            className={`rounded bg-slate-200 shadow p-3 hover:${button.backgroundColor} transition ease-in`}
+            className={`rounded bg-slate-200 shadow p-3 ${button.backgroundColor} transition ease-in`}
           >
             {button.label}
           </button>
